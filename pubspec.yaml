@@ -23,6 +23,8 @@ dependencies:
   iconsax: ^0.0.8
   get: ^4.6.6
   get_storage: ^2.1.1
+  flutter_native_splash: ^2.4.3
+  smooth_page_indicator: ^1.2.0+3
 
 dev_dependencies:
   flutter_test:
@@ -33,7 +35,8 @@ dev_dependencies:
 flutter:
   assets:
     - assets/icons/
-    - assets/images/
     - assets/logos/
+    - assets/images/on_bording_images/
+
  
   uses-material-design: true
