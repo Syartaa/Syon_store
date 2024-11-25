@@ -50,6 +50,10 @@ class SDeviceUtilis {
     return kBottomNavigationBarHeight;
   }
 
+  static double getAppBarHeight() {
+    return kToolbarHeight;
+  }
+
   //more method
   static void launchUrl(String url) async {
     if (await canLaunchUrlString(url)) {
