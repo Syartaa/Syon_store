@@ -6,9 +6,9 @@ class SuccesScreen extends StatelessWidget {
       required this.title,
       required this.image,
       required this.subtitle,
-      required this.onPressed});
+      this.onPressed});
   final String title, image, subtitle;
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed;
 
   @override
   Widget build(BuildContext context) {

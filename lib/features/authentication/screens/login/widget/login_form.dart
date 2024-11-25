@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:syon_ecommerce_app/features/authentication/screens/login/forget_password_screen.dart';
 import 'package:syon_ecommerce_app/features/authentication/screens/signup/signup_screen.dart';
+import 'package:syon_ecommerce_app/navigation_menu.dart';
 import 'package:syon_ecommerce_app/utils/constants/text_strings.dart';
 
 class LoginForm extends StatelessWidget {
@@ -43,7 +45,9 @@ class LoginForm extends StatelessWidget {
                     Text(STexts.rememberMe)
                   ],
                 ),
-                TextButton(onPressed: () {}, child: Text(STexts.forgetPassword))
+                TextButton(
+                    onPressed: () => Get.to(() => ForgetPasswordScreen()),
+                    child: Text(STexts.forgetPassword))
               ],
             ),
             SizedBox(
@@ -52,8 +56,9 @@ class LoginForm extends StatelessWidget {
             //Sign in Button
             SizedBox(
               width: double.infinity,
-              child:
-                  ElevatedButton(onPressed: () {}, child: Text(STexts.signIn)),
+              child: ElevatedButton(
+                  onPressed: () => Get.to(() => NavigationMenu()),
+                  child: Text(STexts.signIn)),
             ),
             SizedBox(
               height: 15,
